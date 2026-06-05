@@ -1,0 +1,21 @@
+{
+  "name": "prototype_teamf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaho-Sumikawa/prototype_teamF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kaho-Sumikawa/prototype_teamF/issues"
+  },
+  "homepage": "https://github.com/Kaho-Sumikawa/prototype_teamF#readme"
+}
