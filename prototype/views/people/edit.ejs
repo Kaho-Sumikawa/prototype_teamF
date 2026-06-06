@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知り合いを編集する</title>
+</head>
+<body>
+    <h1>知り合いを編集する</h1>
+    <form action="/people/<%= person.id %>/update" method="post">
+        <input type="text" name="名前" value="<%= person['名前'] %>"">
+        <input type="text" name="趣味" value="<%= person['趣味'] %>">
+        <input type="text" name="性格" value="<%= person['性格'] %>">
+        <button type="submit">登録する</button>
+    </form>
+    <a href="/mii/edit">Miiを編集する</a>
+</body>
+</html>
