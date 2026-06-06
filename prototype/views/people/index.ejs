@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>知り合い一覧画面</title>
 </head>
+
 <body>
     <div class="people_container">
-        <div class="people">
-            <p>名前</p>
-            <p>趣味</p>
-            <p>性格</p>
-            <div class="mii">Mii表示</div>
-            <button class="delete">✖マーク</button>
-        </div>
+        <% people.forEach(function(person) { %>
+            <div class="people">
+                <p>
+                    <%= person['名前'] %>
+                </p>
+                <p>
+                    <%= person['趣味'] %>
+                </p>
+                <p>
+                    <%= person['性格'] %>
+                </p>
+                <div class="mii">Mii表示</div>
+                <form action="/people/<%= person.id %>/delete" method="post">
+                    <button type="submit">✖マーク</button>
+                </form>
+                <a href="/people/<%= person.id %>/edit">編集する</a>
+            </div>
+        <% }) %>
+
+
     </div>
 </body>
+
 </html>
